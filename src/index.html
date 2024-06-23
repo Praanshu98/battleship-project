@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Battleship Game</title>
+    <script src="/src/main.js" defer></script>
+</head>
+
+<body class="flex flex-col gap-12 bg-orange-600 pt-8">
+    <header class="flex justify-center">
+        <h1 class="font-bold text-3xl underline underline-offset-4 decoration-blue-600">
+            Battleship
+        </h1>
+    </header>
+
+    <main class="flex flex-col items-center gap-6 px-12">
+        <!-- Rules -->
+        <div class="flex flex-col gap-6">
+            <div class="flex justify-between w-[448px]">
+                <button class="bg-orange-700 px-4 py-2 border-r-2 border-b-2 border-blue-600 rounded-md"
+                    id="count_button">
+                    Count: <span id="count">0</span>
+                </button>
+                <button class="bg-orange-700 px-4 py-2 border-r-2 border-b-2 border-blue-600 rounded-md"
+                    id="rules_button">Rules</button>
+            </div>
+            <div id="rules" class="w-[448px]">
+                <ol class="list-decimal list-inside">
+                    <li>
+                        Click on the cells to reveal the hidden items.
+                    </li>
+                    <li>
+                        There are 5 hidden ships in the grid.
+                    </li>
+                    <li>
+                        You win if you find all the ships in less than 8 clicks else you loose.
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="gap-0 border-2 border-slate-400 grid grid-cols-4 w-[448px]">
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="0"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="1"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="2"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="3"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="4"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="5"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="6"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="7"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="8"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="9"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="10"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="11"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="12"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="13"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="14"></div>
+            <div class="border-2 border-slate-400 grid_button w-28 h-28" id="15"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex justify-center">
+            <button class="bg-orange-700 px-4 py-2 border-r-2 border-b-2 border-blue-600 rounded-md"
+                id="reset">Reset</button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
