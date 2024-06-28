@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <title>Currency Converter</title>
+    <script src="/src/main.js" defer type="module"></script>
+</head>
+
+<body class="flex flex-col items-center gap-12 border-white bg-slate-700 border">
+
+    <header class="">
+        <h1 class="text-2xl">
+            Currency Converter
+        </h1>
+    </header>
+
+    <main class="flex flex-col gap-4 text-xl">
+        <!-- <form action="" method="get" class="flex flex-col gap-4"> -->
+        <label for="amount" class="text-center">Enter amount</label>
+        <input type="number" name="amount" id="amount" required min="0" placeholder="100"
+            class="border- border rounded-md">
+        <section class="flex flex-row gap-5" id="conversion">
+            <select name="currency_from" id="from">
+                <!-- <option value="USD">USD</option> -->
+            </select>
+            <span>TO</span>
+            <select name="currency_to" id="to">
+                <!-- <option value="EUR">EUR</option> -->
+            </select>
+        </section>
+
+        <button type="submit" class="bg-blue-600 rounded-md w-full" id="convert">Convert</button>
+        <!-- </form> -->
+        <!-- TODO: remove content ins -->
+        <p id="converted_amount" class="hidden text-center text-white"></p>
+        <p id="error" class="hidden"></p>
+    </main>
+
+    <footer>
+        <!--  -->
+    </footer>
+
+</body>
+
+</html>
