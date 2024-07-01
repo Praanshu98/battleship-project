@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Explorer</title>
     <link href="/src/output.css" rel="stylesheet">
-    <script src="/src/main.js" defer type="module"></script>
+    <script src="/src/js/main.js" defer type="module"></script>
 </head>
 
 <body class="flex flex-col items-center gap-16 border-2 border-black w-screen">
@@ -22,13 +22,9 @@
         </div>
         <p>Top stories for you</p>
         <!-- Filter Buttons -->
-        <div class="flex gap-4">
-            <button class="bg-black shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">All</button>
+        <div class="flex gap-4" id="category_container">
             <!-- Below buttons to be custom generated with js -->
-            <button
-                class="bg-slate-600 shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">Business</button>
-            <button
-                class="bg-slate-600 shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">Politics</button>
+            <!-- <button class="bg-black shadow-button p-0 rounded-button-l rounded-md w-32 h-9 text-white">All</button> -->
         </div>
     </header>
 
