@@ -4,13 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <title>News Explorer</title>
+    <link href="/src/output.css" rel="stylesheet">
+    <script src="/src/main.js" defer type="module"></script>
 </head>
 
-<body>
-    <h1 class="font-bold text-3xl underline">
-        Hello world!
-    </h1>
+<body class="flex flex-col items-center gap-16 border-2 border-black w-screen">
+    <header class="flex flex-col gap-4 w-3/4">
+        <!-- Search Bar -->
+        <div class="mt-9">
+            <div action="" method="post"
+                class="flex flex-row items-center gap-x-4 px-4 py-2.5 border focus-within:border-black rounded-full w-87 h-10">
+                <input type="text" name="search" id="search" placeholder="Search for news"
+                    class="order-1 bg-transparent w-full text-neutral-950 focus:outline-none placeholder-slate-600 focus:ring-neutral-950 caret-green-500 peer">
+                <img src="/public/images/search.svg" alt="" srcset="" class="peer-focus:hidden w-5 h-5">
+            </div>
+        </div>
+        <p>Top stories for you</p>
+        <!-- Filter Buttons -->
+        <div class="flex gap-4">
+            <button class="bg-black shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">All</button>
+            <!-- Below buttons to be custom generated with js -->
+            <button
+                class="bg-slate-600 shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">Business</button>
+            <button
+                class="bg-slate-600 shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">Politics</button>
+        </div>
+    </header>
+
+    <main class="flex flex-col items-center gap-12 w-3/4">
+        <!--  -->
+        <div class="gap-8 grid grid-cols-2" id="news_container">
+            <!-- Div elements with all the news -->
+        </div>
+
+        <button id="show_more"
+            class="bg-slate-600 shadow-button p-0 rounded-button-l rounded-md w-24 h-9 text-white">Show
+            More</button>
+
+    </main>
+
+    <footer>
+        <!--  -->
+        footer section
+    </footer>
 </body>
 
 </html>
